@@ -1,0 +1,50 @@
+@import url(./style.css);
+
+#game-over-screen{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#end{
+    position: absolute;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 250px;
+    top: 100px;
+}
+button{
+    position: absolute;
+    width: 91px;
+    height: 31px;
+    justify-content: center;
+    top: 58%;
+    z-index: 90;
+    background-color: transparent;
+    aspect-ratio: 1/1;
+}
+
+#pontos-final{
+    top: 34.9%;
+    margin-left: 175px;
+}
+#highscore{
+    top: 44.7%;
+    margin-left: 175px;
+}
+#pontos-final, #highscore{
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Jersey 10', sans-serif;
+    z-index: 90;
+    text-align: center;
+
+}
+#medal{
+    position: absolute;
+    top: 39.5%;
+    margin-right: 144px;
+    z-index: 100;
+}

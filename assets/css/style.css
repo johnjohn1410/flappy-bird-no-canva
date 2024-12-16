@@ -2,8 +2,28 @@
     padding: 0;
     margin: 0;
 }
-body{
+body {
+    position: relative;
+    z-index: 1;
     overflow-y: hidden;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: flex-start;
+    min-width: 1110px;
+}
+h1{
+    color: aliceblue;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+}
+
+.bg-image{
+    background-image: url("../../images/flappy-background.png");
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    filter: blur(6px);
 }
 #game{
     width: 500px;
@@ -12,6 +32,9 @@ body{
     margin: auto;
     overflow: hidden;
     background-color: #71c5cf;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 #block{
     width: 60px;
@@ -65,7 +88,7 @@ body{
     height: 24px;
     position: absolute;
     top: 100px;
-    background-image: url(./images/flappy.png);
+    background-image: url(../../images/flappy.png);
     z-index: 8;
 }
 
@@ -86,15 +109,34 @@ body{
 }
 #pontos{
     position: absolute;
-    color: black;
     z-index: 1090;
     font-size: 60px;
     display: flex;
     top: 120px;
     left: 49.4%;
     font-family: 'Jersey 10', sans-serif;
-
-
+}
+#pregame{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: 28px;
+    margin-left: 20px;
+    font-family: 'Jersey 10', sans-serif;
+    word-spacing: 5px;
+}
+#pregame img{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 34px;
+    height: 24px;
+}
+#pregame p, #pregame h1{
+    margin: 20px;
+    padding-top: 30px;
 }
 @keyframes block{
     0%{left:700px}

@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Flappy Bird</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&amp;display=swap" rel="stylesheet">
 </head>
 <body>
+    <img src="" alt="" class="bg-image">
+    <div id="pregame">
+        <h1>Flappy Bird</h1><img src="./images/flappy.png" alt="">
+        <p>Clique com o mouse para pular</p>
+        <p>Evite acertar os canos</p>
+        <p>Boa sorte!</p>
+    </div>
     <div id="game">
         <div id="block">
             <div class="pipe" id="top-pipe"></div>
             <div class="pipe" id="bottom-pipe"></div>
         </div>
-        <div id="pontos" class="pontos">0</div>
+        <h1 id="pontos" class="pontos">0</h1>
         <div id="hole"></div>
         <div id="character"></div>
         <img src="./images/background.png" id="background" class="background" alt="">
         <img src="./images/floor.png" id="floor" class="floor" alt="">
     </div>
 </body>
-<script src="./assets/game.js"></script>
-<script src="./assets/jump.js"></script>
-<script src="./assets/colision.js"></script>
+<script src="./assets/js/colision.js"></script>
+<script src="./assets/js/game.js"></script>
+<script src="./assets/js/jump.js"></script>
 </html>

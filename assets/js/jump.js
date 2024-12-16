@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
+const pulo = new Audio('assets/sounds/pulo.wav')
 function jump() {
     jumping = 1;
     let jumpCount = 0;
@@ -17,5 +18,7 @@ function jump() {
             jumping = 0;
         }
         jumpCount++;
+        pulo.volume = 0.05
+        pulo.play()
     }, 10);
 }

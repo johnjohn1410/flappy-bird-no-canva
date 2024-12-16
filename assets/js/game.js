@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 let block = document.getElementById("block");
 let hole = document.getElementById("hole");
@@ -7,10 +8,10 @@ counter =0
 let passedPipe = false;
 
 let flappySprites = [
-    "url(./images/flappy-mid.png)",
-    "url(./images/flappy.png)",
-    "url(./images/flappy bottom.png)",
-    "url(./images/flappy.png)"
+    "url(../../images/flappy-mid.png)",
+    "url(../../images/flappy.png)",
+    "url(../../images/flappy bottom.png)",
+    "url(../../images/flappy.png)"
 ];
 let spriteIndex = 0;
 
